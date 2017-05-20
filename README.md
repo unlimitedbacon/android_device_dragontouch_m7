@@ -13,3 +13,7 @@ To flash this TWRP recovery image you will need [SP Flash Tool](http://spflashto
 3. Click the location for the `RECOVERY` partition. Choose the TWRP image.
 4. Click Download.
 5. Plug in the tablet and push the reset button on the back.
+
+## Booting Recovery
+
+The M7 has no physical volume buttons, so you cannot enter the bootloader menu when you turn it on. Instead, you must connect it to a computer and then do `adb reboot recovery`. Once your device is rooted, you can download an app [like this one](https://play.google.com/store/apps/details?id=gt.recovery.reboot&hl=en) to allow you to reboot into recovery mode. As a last resort, you can crack open the case. There are solder pads on the back side of the motherboard next to the HDMI port where the volume buttons could have been installed. Shorting the VOL + pad to the ground plane while pushing the power button will allow you to get into the bootloader.
